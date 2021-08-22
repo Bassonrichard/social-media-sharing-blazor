@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Version>5.1.1</Version>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageIcon>Nuget.png</PackageIcon>
+        <Authors>Richard Basson</Authors>
+        <PackageTags>Blazor, Blazor Library</PackageTags>
+        <Description></Description>
+        <PackageProjectUrl>https://github.com/bassonrichard/SocialMediaSharingBlazor</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/bassonrichard/SocialMediaSharingBlazor</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <SupportedPlatform Include="browser" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.9" />
+    </ItemGroup>
+
+</Project>
