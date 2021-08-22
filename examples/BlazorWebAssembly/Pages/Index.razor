@@ -1,0 +1,16 @@
+﻿@page "/"
+
+@using SocialMediaSharingBlazor;
+
+@inject SocialMediaSharing socialMediaSharing;
+
+<button class="btn btn-primary" @onclick="Share"><span class="oi oi-share"></span>Share</button>
+
+@code {
+    private void Share()
+    {
+        socialMediaSharing.ShareOnSocialMedia(title: "Social Media Sharing Blazor", 
+                                              text: "Check out this blazor library that helps you share on social media using c#", 
+                                              url: "https://www.nuget.org/packages/SocialMediaSharingBlazor/");
+    }
+}
