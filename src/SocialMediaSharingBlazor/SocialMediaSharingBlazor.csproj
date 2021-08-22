@@ -6,11 +6,11 @@
 
     <PropertyGroup>
         <Version>5.1.1</Version>
+        
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageIcon>Nuget.png</PackageIcon>
         <Authors>Richard Basson</Authors>
         <PackageTags>Blazor, Blazor Library</PackageTags>
-        <Description></Description>
+        <Description>Blazor class library that enables you to access the native web social media sharing functionality using C#</Description>
         <PackageProjectUrl>https://github.com/bassonrichard/SocialMediaSharingBlazor</PackageProjectUrl>
         <RepositoryUrl>https://github.com/bassonrichard/SocialMediaSharingBlazor</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
@@ -18,6 +18,10 @@
 
     <ItemGroup>
         <SupportedPlatform Include="browser" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE" Pack="true" Visible="false" PackagePath="" />
     </ItemGroup>
 
     <ItemGroup>
