@@ -42,9 +42,10 @@ Blazor class library that enables you to access the native web social media shar
 @code {
     private void Share()
     {
-        socialMediaSharing.ShareOnSocialMedia(title: "", 
-                                              text: "Check out this blazor library that helps you share on social media using c#", 
-                                              url: "https://www.nuget.org/packages/SocialMediaSharingBlazor/");
+        socialMediaSharing.ShareOnSocialMedia(
+        title: "Social Media Sharing Blazor", 
+        text: "Check out this blazor library that helps you share on social media using c#", 
+        url: "https://www.nuget.org/packages/SocialMediaSharingBlazor/");
     }
 }
 
