@@ -18,7 +18,7 @@ namespace SocialMediaSharingBlazor
         public SocialMediaSharing(IJSRuntime jsRuntime)
         {
             moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
-               "import", "./_content/SocialMediaSharing/socialMediaSharing.js").AsTask());
+               "import", "./_content/SocialMediaSharingBlazor/socialMediaSharing.js").AsTask());
         }
 
         public async ValueTask<string> ShareOnSocialMedia(string title, string text, string url)

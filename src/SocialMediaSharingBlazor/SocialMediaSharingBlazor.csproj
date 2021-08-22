@@ -5,8 +5,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <Version>5.1.1</Version>
-        
+        <Version>5.1.2</Version>     
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <Authors>Richard Basson</Authors>
         <PackageTags>Blazor, Blazor Library</PackageTags>
