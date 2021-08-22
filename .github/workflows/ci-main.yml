@@ -30,11 +30,9 @@ jobs:
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-    - name: Restore
-      run: dotnet restore
 
     - name: Build Local Storage
-      run: dotnet build -c Release --no-restore src/$PROJECT_NAME/$PROJECT_NAME.csproj
+      run: dotnet build -c Release src/$PROJECT_NAME/$PROJECT_NAME.csproj
 
   deploy:
     needs: build
