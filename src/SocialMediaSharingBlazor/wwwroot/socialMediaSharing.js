@@ -10,3 +10,17 @@ export function shareOnSocialMedia(title, text, url) {
     .then(() => console.log('Successful share'))
     .catch((error) => console.log('Error sharing', error));
 }
+
+export function shareFileOnSocialMedia(title, text, filesArray) {
+    if (navigator.canShare && navigator.canShare({ files: filesArray })) {
+        navigator.share({
+            files: filesArray,
+            title: title,
+            text: text,
+        })
+            .then(() => console.log('Share was successful.'))
+            .catch((error) => console.log('Sharing failed', error));
+    } else {
+        console.log(`Your system doesn't support sharing files.`);
+    }
+}
