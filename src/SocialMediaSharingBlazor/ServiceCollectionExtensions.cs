@@ -6,7 +6,7 @@ namespace SocialMediaSharingBlazor
     {
         public static IServiceCollection AddSocialMediaSharing(this IServiceCollection services)
         {
-            return services.AddScoped<SocialMediaSharing>();
+            return services.AddScoped<ISocialMediaSharing, SocialMediaSharing>();
         }
     }
 }

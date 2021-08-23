@@ -1,5 +1,7 @@
 # Social Media Sharing Blazor
-Blazor class library that enables you to access the native web social media sharing functionality using C#
+Blazor class library that enables you to access the native web social media sharing functionality using C#.
+The library wraps the PWA web share functionality on which you can read more here: 
+https://web.dev/web-share/
 
 ### Quick Installation Guide
 
@@ -29,9 +31,9 @@ Blazor class library that enables you to access the native web social media shar
 
 * Add the following to the top of component you want to use it on:
   ``` razor
-    @using SocialMediaSharingBlazor;
+  @using SocialMediaSharingBlazor;
 
-    @inject SocialMediaSharing socialMediaSharing;
+  @inject ISocialMediaSharing socialMediaSharing;
   ```
 
 ### Usage
