@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
     </PropertyGroup>
 
     <PropertyGroup>
-        <Version>5.2.0</Version>     
+        <Version>6.0.0</Version>     
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <Authors>Richard Basson</Authors>
         <PackageTags>Blazor, Blazor Library</PackageTags>
@@ -24,7 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.9" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
     </ItemGroup>
 
 </Project>
