@@ -3,6 +3,11 @@ Blazor class library that enables you to access the native web social media shar
 The library wraps the PWA web share functionality on which you can read more here: 
 https://web.dev/web-share/
 
+# Browser Support
+
+Details on browser support can be found here:
+https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share#browser_compatibility
+
 ### Quick Installation Guide
 
 * Install Package
