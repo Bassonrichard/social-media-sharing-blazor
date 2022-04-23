@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <Version>6.0.0</Version>     
+        <Version>6.0.4</Version>     
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <Authors>Richard Basson</Authors>
         <PackageTags>Blazor, Blazor Library</PackageTags>
@@ -13,6 +13,7 @@
         <PackageProjectUrl>https://github.com/bassonrichard/SocialMediaSharingBlazor</PackageProjectUrl>
         <RepositoryUrl>https://github.com/bassonrichard/SocialMediaSharingBlazor</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -21,10 +22,14 @@
 
     <ItemGroup>
         <None Include="..\..\LICENSE" Pack="true" Visible="false" PackagePath="" />
+        <None Include="..\..\README.md">
+          <Pack>True</Pack>
+          <PackagePath>\</PackagePath>
+        </None>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.4" />
     </ItemGroup>
 
 </Project>
