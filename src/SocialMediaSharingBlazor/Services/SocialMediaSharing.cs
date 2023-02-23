@@ -20,6 +20,12 @@ namespace SocialMediaSharingBlazor
             return await module.InvokeAsync<string>("shareOnSocialMedia", title, text, url);
         }
 
+        public async ValueTask<bool> CanShareOnSocialMedia()
+        {
+            var module = await moduleTask.Value;
+            return await module.InvokeAsync<bool>("canShareOnSocialMedia");
+        }
+
         public async ValueTask DisposeAsync()
         {
             if (moduleTask.IsValueCreated)
