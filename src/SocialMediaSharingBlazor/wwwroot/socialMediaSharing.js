@@ -10,3 +10,7 @@ export function shareOnSocialMedia(title, text, url) {
     .then(() => console.log('Successful share'))
     .catch((error) => console.log('Error sharing', error));
 }
+
+export function canShareOnSocialMedia() {
+    return navigator.canShare;
+}
